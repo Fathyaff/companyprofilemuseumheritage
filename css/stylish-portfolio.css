@@ -103,6 +103,16 @@ h6 {
   color: #F9F9F9
 }
 
+.vertical-line {
+  position: absolute;
+  width: 1px; /* Line width */
+  background-color: black; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left; /* Causes the line to float to left of content. 
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
+}
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
@@ -123,6 +133,7 @@ h6 {
   height: 15%;
 }
 
+
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -137,7 +148,7 @@ h6 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #F9F9F9F9;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -153,14 +164,14 @@ h6 {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #191919;
   padding: 15px;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(41, 133, 214, 1);
 }
 
 .sidebar-nav li a:active,
@@ -190,6 +201,7 @@ h6 {
 #sidebar-wrapper.active {
   right: 250px;
   width: 250px;
+  border-radius: 25px 25px 0px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
