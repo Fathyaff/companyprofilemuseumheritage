@@ -409,6 +409,18 @@ Portfolio2
 		opacity: 0.3;
 	}
 
+	.member-hover .content-member-img {
+		opacity: 0;
+		position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+
+	.member-hover:hover .content-member-img{
+		opacity: 1;
+	}
+
   #portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content {
 	font-size: 14px;
 	position: absolute;
