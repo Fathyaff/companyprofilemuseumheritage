@@ -57,9 +57,7 @@
       // else:
 
       images: [
-        "img/bgslides/1.jpg",
-        "img/bgslides/2.jpg",
-        "img/bgslides/3.jpg"
+        "img/asets/bg-1.png",
       ],
 
       onStart: function() {},
