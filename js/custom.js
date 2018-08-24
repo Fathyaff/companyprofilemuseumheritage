@@ -23,6 +23,13 @@
     $(".navbar-collapse.collapse").removeClass('in');
   });
 
+  //slide-bawah-intro
+  $('#slide-bawah').click(function(){
+    $('html,body').animate({
+      scrollTop: $("#team").offset().top},
+      'slow');
+  });
+
   //Home Background Slider
 
   $(function() {
