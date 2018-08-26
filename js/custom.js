@@ -116,6 +116,7 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("active");
+        console.log(current[1]);
         current[2].className = current[2].className.replace(" active", "");
         current[2].className = current[2].className.replace(" active","");
 

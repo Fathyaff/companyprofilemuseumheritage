@@ -7,20 +7,20 @@ if (isset($_POST['submit'])) {
     echo "hai";
     try  {
       $connection = new PDO($dsn, $username, $password, $options);
-      
+
       $new_user = array(
         "nama" => $_POST['name'],
         "email"  => $_POST['email'],
         "pesan"     => $_POST['message'],
       );
-  
+
       $sql = sprintf(
         "INSERT INTO %s (%s) values (%s)",
         "contact",
         implode(", ", array_keys($new_user)),
         ":" . implode(", :", array_keys($new_user))
       );
-      
+
       $statement = $connection->prepare($sql);
       $statement->execute($new_user);
     } catch(PDOException $error) {
@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
                     </button>
 
                     <!-- Logo text or image -->
-                    <a class="navbar-brand" href="index.html">MAIN INDONESIA</a>
+                    <a class="navbar-brand" href="#">MAIN INDONESIA</a>
 
                 </div>
                 <!-- <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
@@ -296,7 +296,7 @@ if (isset($_POST['submit'])) {
         </section>
 
         <!-- Portfolio Grid -->
-        <!-- <section class="home-section bg-white" id="portfolio2" style="
+        <section class="home-section bg-white" id="portfolio2" style="
         background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
         ">
             <div class="container">
@@ -333,7 +333,7 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Parallax 1 -->
         <!-- <section
