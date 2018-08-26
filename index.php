@@ -1,3 +1,35 @@
+<?php
+require "config.php";
+require "common.php";
+
+if (isset($_POST['submit'])) {
+    if (!hash_equals($_SESSION['csrf'], $_POST['csrf'])) die();
+    echo "hai";
+    try  {
+      $connection = new PDO($dsn, $username, $password, $options);
+
+      $new_user = array(
+        "nama" => $_POST['name'],
+        "email"  => $_POST['email'],
+        "pesan"     => $_POST['message'],
+      );
+
+      $sql = sprintf(
+        "INSERT INTO %s (%s) values (%s)",
+        "contact",
+        implode(", ", array_keys($new_user)),
+        ":" . implode(", :", array_keys($new_user))
+      );
+
+      $statement = $connection->prepare($sql);
+      $statement->execute($new_user);
+    } catch(PDOException $error) {
+        echo $sql . "<br>" . $error->getMessage();
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -44,7 +76,7 @@
                     <a class="navbar-brand" href="index.html">MAIN INDONESIA</a>
 
                 </div>
-                <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+                <!-- <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li class="current">
                             <a href="#intro">Home</a>
@@ -61,6 +93,31 @@
                         <li>
                             <a href="#contact">Hubungi Kami</a>
                         </li>
+                    </ul>
+                </div> -->
+                <a class="menu-toggle rounded" href="#">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                  <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav #sidebar-nav-ul">
+                      <li class="sidebar-brand">
+                        <a class="js-scroll-trigger" href="#"></a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#">Ke Halaman Utama</a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#team">Tentang Kami</a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#what-we-do">Yang Kami Lakukan</a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#portfolio2">Portfolio Kami</a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a class="js-scroll-trigger" href="#contact">Hubungi Kami</a>
+                      </li>
                     </ul>
                 </div>
             </div>
@@ -120,7 +177,7 @@
                                     <img src="img/tim/alqiz.png" alt="" class=" img-responsive"/>
                                     <!-- <h4>Alqiz Alqiz</h4> <p>Chief Team</p> -->
                                     <div class="content-member-img">
-                                        <h4>Alqiz Lukman</h4> <p>Penddiri</p>
+                                        <h4>Alqiz Lukman</h4> <p>Pendiri</p>
                                     </div>
                                 </div>
                             </div>
@@ -235,10 +292,9 @@
             </div>
         </section>
 
-        <!-- Portfolio Grid -->
         <section class="home-section bg-white" id="portfolio2" style="
         background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
-    ">
+        ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
@@ -559,7 +615,8 @@
                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                         <div id="errormessage"></div>
 
-                        <form action="" method="post" class="form-horizontal contactForm" role="form">
+                        <form method="post" class="form-horizontal">
+                            <input name="csrf" type="hidden" value="<?php echo escape($_SESSION['csrf']); ?>">
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <input
@@ -588,20 +645,6 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="col-md-12">
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Subject"
-                                        data-rule="minlen:4"
-                                        data-msg="Please enter at least 8 chars of subject"/>
-                                    <div class="validation"></div>
-                                </div>
-                            </div> -->
-
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <textarea
@@ -615,12 +658,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-offset-2 col-md-8">
-                                    <button type="submit" class="btn btn-theme btn-lg btn-block">Kirim Pesan</button>
+                                <div class=" col-md-offset-4 col-md-4">
+                                    <button type="submit" name="submit" value="Submit" class="btn btn-theme btn-lg btn-block contact-btn">Kirim Pesan</button>
                                 </div>
                             </div>
                         </form>
-
+                        <?php if (isset($_POST['submit']) && $statement) : ?>
+                            <blockquote><?php echo escape($_POST['firstname']); ?> successfully added.</blockquote>
+                        <?php endif; ?>
                     </div>
                 </div>
 
