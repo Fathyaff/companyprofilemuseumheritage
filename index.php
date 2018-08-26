@@ -175,18 +175,18 @@ if (isset($_POST['submit'])) {
                             <div class="wow bounceInUp" data-wow-delay="0.1s">
                                 <div class="member-hover">
                                     <img src="img/tim/alqiz.png" alt="" class=" img-responsive"/>
-                                <div class="content-member-img">
-                                    <h4>Alqiz Alqiz</h4> <p>Pendiri</p>
-                                </div>
+                                    <div class="content-member-img">
+                                        <h4>Alqiz Alqiz</h4> <p>Pendiri</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.3s">
                             <div class="wow bounceInUp">
                                 <div class="member-hover">
-                                    <img src="img/tim/danang.png" alt="" class=" img-responsive"/>
+                                    <img src="img/tim/danang.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
-                                        <h4>Thomas Jeffersonn</h4> <p>Web Designer</p>
+                                        <h4>Danang Aryo</h4><p>Bukan apa-apa</p>
                                     </div>
                                 </div>
                             </div>
@@ -194,9 +194,9 @@ if (isset($_POST['submit'])) {
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.5s">
                             <div class="wow bounceInUp">
                                 <div class="member-hover">
-                                    <img src="img/tim/jazmi.png" alt="" class=" img-responsive"/>
+                                    <img src="img/tim/jazmi.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
-                                        <h4>Nola Maurin</h4> <p>Illustrator</p>
+                                        <h4>M Jazmi</h4> <p>Budak Chastelein</p>
                                     </div>
                                 </div>
                             </div>
@@ -204,9 +204,9 @@ if (isset($_POST['submit'])) {
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.7s">
                             <div class="wow bounceInUp">
                                 <div class="member-hover">
-                                    <img src="img/tim/ide.png" alt="" class=" img-responsive"/>
+                                    <img src="img/tim/ide.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
-                                        <h4>Mira Ladovic</h4> <p>Typographer</p>
+                                        <h4>Ide Nada</h4> <p>Penulis</p>
                                     </div>
                                 </div>
                             </div>
@@ -214,9 +214,9 @@ if (isset($_POST['submit'])) {
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.7s">
                             <div class="wow bounceInUp">
                                 <div class="member-hover">
-                                    <img src="img/tim/kae.png" alt="" class="img-responsive"/>
+                                    <img src="img/tim/kae.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
-                                        <h4>Mira Ladovic</h4> <p>Videographer</p>
+                                        <h4>Ide Nada</h4> <p>Videographer</p>
                                     </div>
                                 </div>
                             </div>
