@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
                     </button>
 
                     <!-- Logo text or image -->
-                    <a class="navbar-brand" href="index.html">MAIN INDONESIA</a>
+                    <a class="navbar-brand" href="#">MAIN INDONESIA</a>
 
                 </div>
                 <!-- <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
