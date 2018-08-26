@@ -173,7 +173,7 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-12">
                         <div class="col-md-offset-1 col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team">
                             <div class="wow bounceInUp" data-wow-delay="0.1s">
-                                <div class="member-hover">
+                                <div class="member-hover" data-toggle="modal" href="#portfolioModal1">
                                     <img src="img/tim/alqiz.png" alt="" class=" img-responsive"/>
                                     <div class="content-member-img">
                                         <h4>Alqiz Alqiz</h4> <p>Pendiri</p>
@@ -183,7 +183,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.3s">
                             <div class="wow bounceInUp">
-                                <div class="member-hover">
+                                <div class="member-hover" data-toggle="modal" href="#portfolioModal2">
                                     <img src="img/tim/danang.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
                                         <h4>Danang Aryo</h4><p>Bukan apa-apa</p>
@@ -193,7 +193,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.5s">
                             <div class="wow bounceInUp">
-                                <div class="member-hover">
+                                <div class="member-hover" data-toggle="modal" href="#portfolioModal3">
                                     <img src="img/tim/jazmi.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
                                         <h4>M Jazmi</h4> <p>Budak Chastelein</p>
@@ -203,7 +203,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.7s">
                             <div class="wow bounceInUp">
-                                <div class="member-hover">
+                                <div class="member-hover" data-toggle="modal" href="#portfolioModal4">
                                     <img src="img/tim/ide.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
                                         <h4>Ide Nada</h4> <p>Penulis</p>
@@ -213,7 +213,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team" data-wow-delay="0.7s">
                             <div class="wow bounceInUp">
-                                <div class="member-hover">
+                                <div class="member-hover" data-toggle="modal" href="#portfolioModal5">
                                     <img src="img/tim/kae.png" alt="" class="img-person img-responsive"/>
                                     <div class="content-member-img">
                                         <h4>Ide Nada</h4> <p>Videographer</p>
@@ -801,6 +801,195 @@ if (isset($_POST['submit'])) {
             <i class="fa fa-chevron-up"></i>
         </a>
 
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                    <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/tim/alqiz.png" alt="" class=" img-responsive"/>
+                            </div>
+                            <div class="col-md-9 modal-description">
+                                <h2>Alqiz</h2>
+                                <p class="item-intro">Pendiri</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h5>"Hidup untuk Tidur"</h5>
+                            </div>
+                        </div>
+                        <!-- <button class="btn btn-primary modal-button" data-dismiss="modal" type="button" style="margin: 0 0 0 300px;">
+                            <i class="fa fa-times"></i>
+                            Close</button> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                    <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/tim/danang.png" alt="" class="img-person img-responsive"/>
+                            </div>
+                            <div class="col-md-9 modal-description">
+                                <h2>Danang Aryo</h2>
+                                <p class="item-intro">Bukan apa-apa</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h5>"Hidup untuk Tidur"</h5>
+                            </div>
+                        </div>
+                        <!-- <button class="btn btn-primary modal-button" data-dismiss="modal" type="button" style="margin: 0 0 0 300px;">
+                            <i class="fa fa-times"></i>
+                            Close</button> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                    <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/tim/jazmi.png" alt="" class="img-person img-responsive"/>
+                            </div>
+                            <div class="col-md-9 modal-description">
+                                <h2>M. Jazmi</h2>
+                                <p class="item-intro">Budak Chastelein</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h5>"Hidup untuk Tidur"</h5>
+                            </div>
+                        </div>
+                        <!-- <button class="btn btn-primary modal-button" data-dismiss="modal" type="button" style="margin: 0 0 0 300px;">
+                            <i class="fa fa-times"></i>
+                            Close</button> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                    <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/tim/ide.png" alt="" class="img-person img-responsive"/>
+                            </div>
+                            <div class="col-md-9 modal-description">
+                                <h2>Ide Nada</h2>
+                                <p class="item-intro">Pendiri</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h5>"Hidup untuk Tidur"</h5>
+                            </div>
+                        </div>
+                        <!-- <button class="btn btn-primary modal-button" data-dismiss="modal" type="button" style="margin: 0 0 0 300px;">
+                            <i class="fa fa-times"></i>
+                            Close</button> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                    <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/tim/kae.png" alt="" class="img-person img-responsive"/>
+                            </div>
+                            <div class="col-md-9 modal-description">
+                                <h2>Kae</h2>
+                                <p class="item-intro">Videographer</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h5>"Hidup untuk Tidur"</h5>
+                            </div>
+                        </div>
+                        <!-- <button class="btn btn-primary modal-button" data-dismiss="modal" type="button" style="margin: 0 0 0 300px;">
+                            <i class="fa fa-times"></i>
+                            Close</button> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
         <!-- js -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
