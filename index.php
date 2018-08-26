@@ -293,7 +293,7 @@ if (isset($_POST['submit'])) {
         </section>
 
         <!-- Portfolio Grid -->
-        <!-- <section class="home-section bg-white" id="portfolio2" style="
+        <section class="home-section bg-white" id="portfolio2" style="
         background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
         ">
             <div class="container">

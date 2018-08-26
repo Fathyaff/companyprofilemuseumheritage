@@ -151,11 +151,11 @@ nav.navbar{
 }
 
 .fixed-to-top {
-	top:0;	
+	top:0;
 }
 
 nav.navbar.fixed-to-top{
-	top: 0px;	
+	top: 0px;
 	background-color: rgba(243, 241, 241, 0.48);
 	height: 9%;
 }
@@ -215,11 +215,11 @@ nav.navbar.fixed-to-top{
 	transform: translateX(250px);
 	background: #ffffff;
 	border-left: 1px solid rgba(255, 255, 255, 0.1);
-	border-top-left-radius: 10pt; 
+	border-top-left-radius: 10pt;
 	border-bottom-left-radius: 10pt;
 	margin-top: -10px;
   }
-  
+
   .navbar-default .sidebar-nav {
 	border-radius: 10pt 0;
 	position: absolute;
@@ -230,7 +230,7 @@ nav.navbar.fixed-to-top{
 	padding: 0;
 	list-style: none;
   }
-  
+
   .navbar-default .sidebar-nav li.sidebar-nav-item a {
 	display: block;
 	text-decoration: none;
@@ -240,19 +240,19 @@ nav.navbar.fixed-to-top{
 	margin-top: -5px;
 	padding: 20px;
   }
-  
+
   .navbar-default .sidebar-nav li a:hover {
 	text-decoration: none;
 	color: #191919;
 	/* background: rgba(255, 255, 255, 0.2); */
 	background: #E6E6E6;
   }
-  
+
   .navbar-default sidebar-nav li a:active,
   .navbar-default .sidebar-nav li a:focus {
 	text-decoration: none;
   }
-  
+
   .navbar-default .sidebar-nav > .sidebar-brand {
 	border-radius: 10pt;
 	margin-top: -2px;
@@ -264,16 +264,16 @@ nav.navbar.fixed-to-top{
 	padding-bottom: 15px;
 	padding-left: 15px; */
   }
-  
+
   .navbar-default .sidebar-nav > .sidebar-brand a {
 	color: #fff;
   }
-  
+
   .navbar-default .sidebar-nav > .sidebar-brand a:hover {
 	color: #fff;
 	background: none;
   }
-  
+
   .navbar-default #sidebar-wrapper.active {
 	right: 250px;
 	width: 250px;
@@ -287,7 +287,7 @@ nav.navbar.fixed-to-top{
   .navbar-default #sidebar-wrapper li .active{
 	  background: #848488;
   }
-  
+
   .navbar-default .menu-toggle {
 	position: fixed;
 	right: 15px;
@@ -300,11 +300,11 @@ nav.navbar.fixed-to-top{
 	line-height: 40px;
 	z-index: 999;
   }
-  
+
   .navbar-default .menu-toggle:focus, .menu-toggle:hover {
 	color: #fff;
   }
-  
+
   .navbar-default .menu-toggle:hover {
 	background: #343a40;
   }
@@ -438,9 +438,9 @@ Intro
 Portfolio2
 ================================= */
 
-/* #portfolio-hover :hover + #img-fluid {
-	visibility: hidden;
-} */
+#portfolio2{
+	padding: 0px 0px 430px 0px;
+}
 
 #portfolio2 .section-heading h2 {
 	font-family: GeosansLight-Oblique;
@@ -448,10 +448,10 @@ Portfolio2
 	text-transform: capitalize;
 }
 
-/* .portfolio-hover .portfolio2-img {
+.portfolio-hover .portfolio2-img {
   height: 350px;
   overflow: hidden;
-} */
+}
 
 .portfolio-hover .portfolio2-img::after {
 	-webkit-filter: blur(50px);
@@ -460,6 +460,19 @@ Portfolio2
 	-ms-filter: blur(50px);
 	filter: blur(50px);
 }
+
+.portfolio-hover .portfolio-hover-content {
+	visibility: hidden
+}
+
+.portfolio-hover:hover .portfolio-hover-content {
+	opacity: 1;
+	visibility: visible;
+	}
+	.portfolio-hover:hover img {
+		filter: blur(5px);
+  	-webkit-filter: blur(5px);
+	}
 
 @media (max-width: 768px) {
   .portfolio-hover .portfolio2-img {
@@ -532,8 +545,6 @@ Portfolio2
 	.portfolio-hover:hover img {
 		filter: blur(5px);
   	-webkit-filter: blur(5px);
-	}
-
 	}
 
 	.member-hover:hover .img-responsive{
