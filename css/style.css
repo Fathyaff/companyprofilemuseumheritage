@@ -438,6 +438,63 @@ Intro
 Portfolio2
 ================================= */
 
+@media (max-width: 768px) {
+	#portfolio2 .portfolio-hover{
+		width: 210px;
+	}
+
+	#portfolio2 .portfolio-hover-content h2 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	#portfolio2 .portfolio-hover-content h2 {
+		color: #fff;
+	}
+
+	#portfolio2 .portfolio-hover-content h3 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 7px;
+		line-height: 26px;
+		font-style: italic;
+		text-align: left;
+	}
+
+	#portfolio2 .portfolio-hover-content p {
+		line-height: 7px;
+		font-size: 10px;
+		text-align: left;
+	}
+
+	#portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content {
+		font-size: 14px;
+		position: absolute;
+		top: 30%;
+		width: 175%;
+		/* margin-top: -100px; */
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: -25px;
+		text-align: center;
+		color: white;
+	}
+	.portfolio-hover img {
+		width: 175%;
+		/* height: 250px; */
+		float: left;
+		margin-left: -25px;
+	}
+
+
+	#portfolio2 .portfolio-item .portfolio-hover {
+		width: 250px;
+	}
+
+}
+
 #portfolio2{
 	padding: 0px 0px 430px 0px;
 }
@@ -474,36 +531,53 @@ Portfolio2
   	-webkit-filter: blur(5px);
 	}
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .portfolio-hover .portfolio2-img {
     width: 325%;
   }
   .portfolio-hover .portfolio2-img img {
     margin-left: 0;
-	padding-bottom: 30px;
-
+		padding-bottom: 30px;
   }
 }
 
-#portfolio2 .content h2 {
-  color: #333;
-  font-weight: 300;
-  font-size: 24px;
-  text-align: left;
-}
+@media(min-width: 768px) {
+	#portfolio2 .content h2 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 24px;
+		text-align: left;
+	}
 
-#portfolio2 .content h3 {
-  color: #777;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  font-style: italic;
-  text-align: left;
-}
+	#portfolio2 .content h3 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 26px;
+		font-style: italic;
+		text-align: left;
+	}
 
-#portfolio2 .content p {
-  line-height: 26px;
-  text-align: left;
+	#portfolio2 .content p {
+		line-height: 26px;
+		text-align: left;
+	}
+
+	#portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content {
+		font-size: 14px;
+		position: absolute;
+		top: 30%;
+		width: 100%;
+		/* margin-top: -100px; */
+		padding-left: 200px;
+		padding-right: 200px;
+		text-align: center;
+		color: white;
+		}
+
+		#portfolio2 .portfolio-item .portfolio-hover {
+			width: 285%
+		}
 }
 
 #portfolio2 .content p:last-child {
@@ -527,7 +601,7 @@ Portfolio2
   #portfolio2 .portfolio-item .portfolio-hover {
 	position: absolute;
 	margin-left: 8%;
-	width: 285%;
+	/* width: 285%; */
 	height: 97%;
 	/* -webkit-transition: all ease 0.5s; */
 	/* -moz-transition: all ease 0.5s; */
@@ -547,7 +621,7 @@ Portfolio2
   		-webkit-filter: blur(5px);
 	}
 
-	
+
 	.member-hover:hover .img-responsive{
 		opacity: 0.3;
 	}
@@ -563,18 +637,6 @@ Portfolio2
 	.member-hover:hover .content-member-img{
 		opacity: 1;
 	}
-
-  #portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content {
-	font-size: 14px;
-	position: absolute;
-	top: 30%;
-	width: 100%;
-	/* margin-top: -100px; */
-	padding-left: 200px;
-	padding-right: 200px;
-	text-align: center;
-	color: white;
-  }
 
   #portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content i {
 	margin-top: -12px;
@@ -623,33 +685,33 @@ Portfolio Modal
 	padding-right: 0px !important;
 	/* background: #333333; */
   }
-  
+
   .portfolio-modal .modal-dialog {
 	/* margin: 2rem; */
 	max-width: 100vw;
 	width: 70%;
-	
+
 	/* height: -10%; */
   }
-  
+
   .portfolio-modal .modal-content {
 	margin-top: 100px;
 	padding: 50px 100px 50px 100px;
 	text-align: center;
 	background: #333333;
   }
-  
+
   .portfolio-modal .modal-body {
 	text-align: left;
 	margin-left: -50px;
   }
-  
+
     .portfolio-modal .modal-content h2 {
 	font-size: 3em;
 	/* margin-bottom: 15px; */
 	color:#F9F9F9F9;
   }
-  
+
   .portfolio-modal .modal-content p {
 	/* margin-bottom: 30px; */
 	color:#F9F9F9F9;
@@ -658,28 +720,28 @@ Portfolio Modal
   .portfolio-modal .modal-content h5 {
 	color:#F9F9F9F9;
   }
-  
+
   .portfolio-modal .modal-content p.item-intro {
 	font-size: 16px;
 	font-style: italic;
 	margin: 20px 0 30px;
 	font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+
   .portfolio-modal .modal-content ul.list-inline {
 	margin-top: 0;
 	margin-bottom: 30px;
   }
-  
+
   .portfolio-modal .modal-content img {
 	margin-bottom: 30px;
   }
-  
+
   .portfolio-modal .modal-content button {
 	cursor: pointer;
 	background: #191919;
   }
-  
+
   .portfolio-modal .close-modal {
 	position: absolute;
 	top: 25px;
@@ -688,13 +750,13 @@ Portfolio Modal
 	height: 75px;
 	cursor: pointer;
 	background-color: transparent;
-	
+
   }
-  
+
   .portfolio-modal .close-modal:hover {
 	opacity: 0.3;
   }
-  
+
   .portfolio-modal .close-modal .lr {
 	/* Safari and Chrome */
 	z-index: 1051;
@@ -707,7 +769,7 @@ Portfolio Modal
 	transform: rotate(45deg);
 	background-color: #F9F9F9F9;
   }
-  
+
   .portfolio-modal .close-modal .lr .rl {
 	/* Safari and Chrome */
 	z-index: 1052;

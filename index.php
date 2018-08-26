@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
         <!-- Navigation -->
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
-                <div class="navbar-header">
+                <!-- <div class="navbar-header">
                     <button
                         type="button"
                         class="navbar-toggle"
@@ -72,10 +72,10 @@ if (isset($_POST['submit'])) {
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- Logo text or image -->
+                    Logo text or image
                     <a class="navbar-brand" href="#">MAIN INDONESIA</a>
 
-                </div>
+                </div> -->
                 <!-- <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li class="current">
@@ -822,8 +822,8 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-9 modal-description">
                                 <h2>Alqiz</h2>
                                 <p class="item-intro">Pendiri</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
                                 expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <h5>"Hidup untuk Tidur"</h5>
                             </div>
@@ -860,8 +860,8 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-9 modal-description">
                                 <h2>Danang Aryo</h2>
                                 <p class="item-intro">Bukan apa-apa</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
                                 expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <h5>"Hidup untuk Tidur"</h5>
                             </div>
@@ -898,8 +898,8 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-9 modal-description">
                                 <h2>M. Jazmi</h2>
                                 <p class="item-intro">Budak Chastelein</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
                                 expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <h5>"Hidup untuk Tidur"</h5>
                             </div>
@@ -936,8 +936,8 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-9 modal-description">
                                 <h2>Ide Nada</h2>
                                 <p class="item-intro">Pendiri</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
                                 expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <h5>"Hidup untuk Tidur"</h5>
                             </div>
@@ -974,8 +974,8 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-9 modal-description">
                                 <h2>Kae</h2>
                                 <p class="item-intro">Videographer</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
                                 expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <h5>"Hidup untuk Tidur"</h5>
                             </div>
