@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
         <!-- Navigation -->
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
-                <div class="navbar-header">
+                <!-- <div class="navbar-header">
                     <button
                         type="button"
                         class="navbar-toggle"
@@ -72,10 +72,10 @@ if (isset($_POST['submit'])) {
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- Logo text or image -->
+                    Logo text or image
                     <a class="navbar-brand" href="#">MAIN INDONESIA</a>
 
-                </div>
+                </div> -->
                 <!-- <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li class="current">
