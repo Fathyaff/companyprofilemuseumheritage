@@ -1,4 +1,21 @@
 (function($) {
+  $('.navbar-default .sidebar-nav-item a').each(function(){
+    if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('active'); 
+        $(this).parents('li').addClass('active');
+    }else{
+      $(this).removeClass('active');
+    }
+  });
+
+
+  // Closes the sidebar menu
+  $(".navbar-default .menu-toggle").click(function(e) {
+    e.preventDefault();
+    $(".navbar-default #sidebar-wrapper").toggleClass("active");
+    $(".navbar-default .menu-toggle > .fa-bars, .navbar-default .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+    $(this).toggleClass("active");
+  });
 
   // Back to top button
   $(window).scroll(function() {
@@ -88,6 +105,27 @@
     speed: 4000
   });
 
+
+  $(document).ready(function(){
+    $('.navbar-default').css('display', 'block');
+    $('.navbar-default').addClass('fixed-to-top');
+
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("sidebar-wrapper");
+    var btns = header.getElementsByClassName("sidebar-nav-item");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[2].className = current[2].className.replace(" active", "");
+        current[2].className = current[2].className.replace(" active","");
+
+        this.className += " active";
+        var ajs = this.getElementsByClassName("js-scroll-trigger");
+        ajs[0].className += " active";
+      });
+    }
+  });
+
   // Fixed navbar
   $(window).scroll(function() {
 
@@ -98,8 +136,8 @@
       $('.navbar-default').addClass('fixed-to-top');
 
     } else if (scrollTop == 0) {
-
-      $('.navbar-default').removeClass('fixed-to-top');
+      $('.navbar-default').addClass('fixed-to-top');
+      // $('.navbar-default').removeClass('fixed-to-top');
     }
   });
 
