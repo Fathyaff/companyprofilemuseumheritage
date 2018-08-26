@@ -1,3 +1,35 @@
+<?php
+require "config.php";
+require "common.php";
+
+if (isset($_POST['submit'])) {
+    if (!hash_equals($_SESSION['csrf'], $_POST['csrf'])) die();
+    echo "hai";
+    try  {
+      $connection = new PDO($dsn, $username, $password, $options);
+      
+      $new_user = array(
+        "nama" => $_POST['name'],
+        "email"  => $_POST['email'],
+        "pesan"     => $_POST['message'],
+      );
+  
+      $sql = sprintf(
+        "INSERT INTO %s (%s) values (%s)",
+        "contact",
+        implode(", ", array_keys($new_user)),
+        ":" . implode(", :", array_keys($new_user))
+      );
+      
+      $statement = $connection->prepare($sql);
+      $statement->execute($new_user);
+    } catch(PDOException $error) {
+        echo $sql . "<br>" . $error->getMessage();
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -264,9 +296,9 @@
         </section>
 
         <!-- Portfolio Grid -->
-        <section class="home-section bg-white" id="portfolio2" style="
+        <!-- <section class="home-section bg-white" id="portfolio2" style="
         background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
-    ">
+        ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
@@ -301,7 +333,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Parallax 1 -->
         <!-- <section
@@ -587,7 +619,8 @@
                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                         <div id="errormessage"></div>
 
-                        <form action="" method="post" class="form-horizontal contactForm" role="form">
+                        <form method="post" class="form-horizontal">
+                            <input name="csrf" type="hidden" value="<?php echo escape($_SESSION['csrf']); ?>">
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <input
@@ -616,20 +649,6 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="col-md-12">
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Subject"
-                                        data-rule="minlen:4"
-                                        data-msg="Please enter at least 8 chars of subject"/>
-                                    <div class="validation"></div>
-                                </div>
-                            </div> -->
-
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <textarea
@@ -643,12 +662,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-offset-2 col-md-8">
-                                    <button type="submit" class="btn btn-theme btn-lg btn-block">Kirim Pesan</button>
+                                <div class=" col-md-offset-4 col-md-4">
+                                    <button type="submit" name="submit" value="Submit" class="btn btn-theme btn-lg btn-block contact-btn">Kirim Pesan</button>
                                 </div>
                             </div>
                         </form>
-
+                        <?php if (isset($_POST['submit']) && $statement) : ?>
+                            <blockquote><?php echo escape($_POST['firstname']); ?> successfully added.</blockquote>
+                        <?php endif; ?>
                     </div>
                 </div>
 

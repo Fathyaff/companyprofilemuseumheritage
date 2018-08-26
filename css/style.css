@@ -502,11 +502,8 @@ Portfolio2
 	margin: 0 0 15px;
   }
 
-<<<<<<< HEAD
-	#portfolio2 .portfolio-item  {
-=======
+
   #portfolio2 .portfolio-item  {
->>>>>>> 12f36f652f7525a333d13cfb4c1b8540ac611a1b
 	position: relative;
 	display: block;
 	max-width: 400px;
@@ -524,20 +521,9 @@ Portfolio2
 	/* transition: all ease 0.5s; */
 	opacity: 1;
 	background: rgba(179, 179, 161, 0.508);
-<<<<<<< HEAD
-	visibility: hidden;
-	}
-
-	.portfolio-hover img {
-		visibility: visible;
-	}
-
-  .portfolio-hover:hover .portfolio-hover-content {
-=======
   }
 
   #portfolio2 .portfolio-item  .portfolio-hover:hover {
->>>>>>> 12f36f652f7525a333d13cfb4c1b8540ac611a1b
 	opacity: 1;
 	visibility: visible;
 
@@ -548,8 +534,6 @@ Portfolio2
   	-webkit-filter: blur(5px);
 	}
 
-<<<<<<< HEAD
-=======
 	}
 
 	.member-hover:hover .img-responsive{
@@ -568,7 +552,6 @@ Portfolio2
 		opacity: 1;
 	}
 
->>>>>>> 12f36f652f7525a333d13cfb4c1b8540ac611a1b
   #portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content {
 	font-size: 14px;
 	position: absolute;
@@ -933,6 +916,11 @@ Works
 /* ================================
 Contact
 ================================= */
+#contact .form-control , .contact-btn{
+	border-radius: 10pt;
+
+
+}
 #contact h2{
 	font-family: GeosansLight;
 	font-weight: 100;
