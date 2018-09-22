@@ -43,6 +43,10 @@ h6 {
 	font-size: 18px;
 }
 
+p {
+	font-size: 24px;
+}
+
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	color: #3a3a3a;
 	font-weight: 700;
@@ -316,7 +320,7 @@ Home sections
 
 .home-section {
 	width: 100%;
-	padding: 150px 0px 150px 0px;
+	padding: 100px 0px 100px 0px;
 }
 
 /* --- heading --- */
@@ -465,11 +469,24 @@ Portfolio2
 
 	#portfolio2 .portfolio-hover-content p {
 		line-height: 7px;
-		font-size: 10px;
-		text-align: left;
+		font-size: 5px;
+		text-align: justify;
 	}
 
 	#portfolio2 .portfolio-item  .portfolio-hover .portfolio-hover-content {
+		font-size: 10px;
+		position: absolute;
+		/* top: 30%; */
+		width: 175%;
+		/* margin-top: -100px; */
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: -25px;
+		text-align: center;
+		color: white;
+	}
+
+	#portfolio2 .portfolio-hover .portfolio-hover-content {
 		font-size: 14px;
 		position: absolute;
 		top: 30%;
@@ -488,16 +505,19 @@ Portfolio2
 		margin-left: -25px;
 	}
 
+	#portfolio2 .portfolio-hover {
+		width: 250px;
+	}
 
 	#portfolio2 .portfolio-item .portfolio-hover {
 		width: 250px;
 	}
 
 }
-
+/* 
 #portfolio2{
 	padding: 0px 0px 430px 0px;
-}
+} */
 
 #portfolio2 .section-heading h2 {
 	font-family: GeosansLight-Oblique;
@@ -520,6 +540,27 @@ Portfolio2
 
 .portfolio-hover .portfolio-hover-content {
 	visibility: hidden
+}
+
+.portfolio-hover .portfolio-hover-content h2{
+	margin-top: 7%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-weight: 300;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.portfolio-hover .portfolio-hover-content p{
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	line-height: 25px;
+	font-weight: 500;
+	font-size: 25px;
+	color: #fff;
+	text-align: justify;
 }
 
 .portfolio-hover:hover .portfolio-hover-content {
@@ -925,7 +966,7 @@ Services
 	border-radius: 0px;
 }
 
-.service .carousel-indicators li {
+.service  li {
 	display: inline-block;
 	margin: 1px;
 	width: 45px;

@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
         <!-- Navigation -->
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
-                <!-- <div class="navbar-header">
+                <div class="navbar-header">
                     <button
                         type="button"
                         class="navbar-toggle"
@@ -71,11 +71,9 @@ if (isset($_POST['submit'])) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    Logo text or image
                     <a class="navbar-brand" href="#">MAIN INDONESIA</a>
 
-                </div> -->
+                </div>
                 <!-- <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li class="current">
@@ -151,27 +149,26 @@ if (isset($_POST['submit'])) {
 
         <!-- Team -->
         <section id="team" class="home-section bg-white" style="
-        background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
-    ">
+        background-image: url(img/asets/bg-2-bw.jpg); background-position: center; background-size: cover;
+        ">
             <div class="container">
                 <div class="row">
                     <div class=" col-md-12">
                         <div class="section-heading">
                             <h2>Tentang Kami</h2>
                             <div class="heading-line"></div>
-                            <p>Kami memiliki mimpi agar masyarakat Indonesia memiliki keinginan untuk
-                                mengunjungi warisan budaya dan museum yang tersebar di seluruh penjuru negeri.
-                                Melalui teknologi imersif, kami berusaha mempromosikan keunikan dan keragaman
-                                budaya, sejarah, dan tradisi yang ada di Indonesia. Tim kami senang berbagi
-                                pengetahuan mengenai cagar budaya, museum, dan penggunaan teknologi interaktif.
-                                Kami semangat untuk dapat berkolaborasi dengan institusi visioner yang memiliki
-                                mimpi yang sama dengan kami.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-offset-1 col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team">
+                    <div class="col-md-10 col-md-offset-1">
+                        <p style="text-align:justify">Kami memiliki mimpi agar masyarakat Indonesia memiliki keinginan untuk mengunjungi warisan budaya dan museum yang tersebar di seluruh penjuru negeri.
+                        Melalui teknologi imersif, kami berusaha mempromosikan keunikan dan keragaman budaya, sejarah, dan tradisi yang ada di Indonesia.</p>
+                        <p style="text-align:justify">Tim kami senangberbagi pengetahuan mengenai cagar budaya museum dan penggunaan teknologi interaktif. 
+                        Kami semangat untuk dapat berkolaborasi dengan institusi visioner yang memilik mimpi yang sama dnegan kami. <a href="#contact">Hubungi kami.</a></p>
+                    </div>
+                    <!-- <div class="col-md-12"> -->
+                        <!-- <div class="col-md-offset-1 col-xs-12 col-sm-2 col-md-2 col-lg-2 box-team">
                             <div class="wow bounceInUp" data-wow-delay="0.1s">
                                 <div class="member-hover" data-toggle="modal" href="#portfolioModal1">
                                     <img src="img/tim/alqiz.png" alt="" class=" img-responsive"/>
@@ -220,6 +217,40 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                             </div>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="row">
+                    <br><br><br><br><br><br>
+                    <div class="col-md-10 col-md-offset-1">
+                        <div style="position:relative">
+                            <div>
+                                <img src="img/tim/gedung1.png" alt="" width="100%" class="img-responsive"/> 
+                            </div>
+                            <div style="position:absolute; left:0; bottom:0;">
+                                <img src="img/tim/gedung1.png" alt="" width="100%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:0; bottom:0;">
+                                <img src="img/tim/gedung2.png" alt="" width="100%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:0; bottom:0;">
+                                <img src="img/tim/gedung3.png" alt="" width="100%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:9%; bottom:0;">
+                                <img src="img/tim/becak.png" alt="" width="5%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:60%; bottom:0;">
+                                <img src="img/tim/ondel2.gif" alt="" width="10%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:62%; bottom:0;">
+                                <img src="img/tim/ondel2.gif" alt="" width="10%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:80%; bottom:0;">
+                                <img src="img/tim/jaipong.gif" alt="" width="15%" class="img-responsive"/>    
+                            </div>
+                            <div style="position:absolute; left:82%; bottom:0;">
+                                <img src="img/tim/jaipong.gif" alt="" width="18%" class="img-responsive"/>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,8 +259,8 @@ if (isset($_POST['submit'])) {
 
         <!-- What We Do -->
         <section id="what-we-do" class="home-section bg-white" style="
-        background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
-    ">
+        background-image: url(img/asets/bg-2-bw.jpg); background-position: center; background-size: cover;
+        ">
             <div class="container">
                 <div class="row">
                     <div class=" col-md-12">
@@ -297,7 +328,7 @@ if (isset($_POST['submit'])) {
 
         <!-- Portfolio Grid -->
         <section class="home-section bg-white" id="portfolio2" style="
-        background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;
+        background-image: url(img/asets/bg-2-bw.jpg); background-position: center; padding-top:-50%; padding-botton:-30%; background-size: cover;
         ">
             <div class="container">
                 <div class="row">
@@ -308,28 +339,56 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item col-xs-6">
-                            <div class="portfolio-hover">
-                                <img class="img-fluid" src="img/asets/banner.png" width="100%" alt="">
-                                <div class="portfolio-hover-content">
+                <div id="carousel-service" class="service carousel slide">
+                    <!-- slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                            <!-- <div class="col-md-4 col-sm-6 portfolio-item col-xs-6 "> -->
+                            <div class="portfolio-hover" style="position:relative">
+                                <img class="img-fluid" src="img/asets/dhp.png" width="100%" height="100%" alt="">
+                                <div class="portfolio-hover-content" style="position:absolute; top:0">
                                     <h2>DEPOK HERITAGE PROJECT</h2>
-                                    <p>Lore m ipsu m dolor s it amet, con s ectetur adipis cin g elit. Pell en t e s q ue curs us id ne q ue e g et fe ug i a t . Null a ve ne na t i s
-                                        ve ne natis qu am, volutpat varius ligul a orn are varius . Morbi t e m p o r p o rt t i to r l o b o rt i s . Cura bi t ur ri s us a ug ue ,
-                                        e le me ntu m ne c la cus eu, facilis is gravida erat. Proin el eifen d ul t ri ci e s ni s i co ns e q ua t d i c t um . Ph a s e llus no n m a g na id
-                                        ex tincidu nt fringill a vel at ligul a. D uis l obortis auctor imperdiet . U t a ug ue m a g na , fini b us e u rut rum e u, s a g i t t i s no n
-                                        u rna. Mau ris ne c turpis s ed s apien gravida l obortis eget vel ni s l . Na m a uc to r im p e rd i et e ro s , a t vo lut p a t q ua m
-                                        sagittis se d. In jus to nibh , aliquam ut mauris s it amet, eges tas t incid unt q ua m . D o ne c int e rd um g ra vid a t e m p us . S e d
-                                        ve hicula massa mauris . Don ec bl an dit es t tin cidun t, commodo m et us no n, d a p i b us m a uri s . D ui s p ret i um ni s i ve l mi
-                                        vulpu tate sagittis.
-                                        <br>
-                                        Vivamu s et fe u giat purus . Aliquam n ec volutpat diam, vitae effi ci t ur ip s um . Int e g e r t e m p us p o rt t i to r m a uri s id
-                                        pulvinar. Inte ge r maximus ris us orn are purus tris tique, ut p ul vina r nunc ul t ri ci e s . Cra s fe ug i a t o rci et to rto r
-                                        male su ada, e get maximus quam mattis . Pell en tes que erat mag na , o rna re id p e ll e nt e s q ue id , bl a nd i t id e nim . Null a
-                                        libe ro se m, gravida ut aliquam viverra, tin cidun t ac nibh . Aliqua m a m a uri s a ni s i ull a m co rp e r d i c t um . M a uri s e ra t
-                                        u rna, pulvinar et con gue ph aretra, pl acerat s it amet s em. Viva m us t e llus e li t , l a o re et s e d p urus a , fa cili s i s m o l e s t i e
-                                        au gu e .</p>>
+                                    <p style="text-align:justify">Kota Depok sebagai daerah yang memiliki sejarah panjang sejak jaman kolonial Belanda,
+                                        memiliki beragam peninggalan bangunan bersejarah di Kota tersebut. Akan tetapi
+                                        berdasarkan studi terbaru, lebih dari 70% bangunan tersebut telah hilang dan berganti
+                                        menjadi perumahan atau bangunan komersil lainnya. Tim Pengabdian Masyarakat
+                                        Universitas Indonesia yang terdiri dari Departemen Arkeologi, Departemen Teknik Kimia,
+                                        dan Fakultas Ilmu Komputer berusaha mempreservasi memori bangunan tersebut melalui
+                                        media digital. Website ini menggunakan teknologi Virtual Reality (VR) dan Augmented
+                                        Reality (AR) untuk melestarikan bangunan bersejarah yang berada di Kecamatan Pancoran
+                                        Mas yang merupakan pusat pemukiman cikal bakal Kota Depok.</p>>
+                                   
                                 </div>
                             </div>
+                            <!-- </div> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                            <div class="portfolio-hover" style="position:relative">
+                                <img class="img-fluid" src="img/asets/portfolioa.png" width="100%" height="100%" alt="">
+                                <div class="portfolio-hover-content" style="position:absolute; top:0">
+                                    <h2>DEPOK LAMA PROJECT</h2>
+                                    <p style="text-align:justify">Depok Lama merupakan salah satu daerah di Indonesia yang sarat akan sejarah. Mulai dari
+                                        menjadi tanah partikelir milik Cornelis Chastelein hingga menjadi daerah otonom yang
+                                        dikelola oleh orang Indonesia pada masa pemerintahan kolonial. Program ini merupakan
+                                        inisiatif dari Tim Pengabdian Masyarakat Universitas Indonesia yang berjudul
+                                        “Pengembangan Media Interaktif Berbasis Digital sebagai Upaya Pelestarian dan Edukasi
+                                        Aset Bangunan Bersejarah di Kota Depok”. Website ini bertujuan untuk mengupas sejarah
+                                        kaum Depok Lama yang selama ini jarang terdengar. Selain itu, website ini juga memberikan
+                                        informasi mengenai bangunan bersejarah yang berada di daerah Depok Lama.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-target="#carousel-service" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-service" data-slide-to="1"></li>
+                    </ol>
                     </div>
                 </div>
             </div>
@@ -602,7 +661,7 @@ if (isset($_POST['submit'])) {
 
         <!-- Contact -->
         <section id="contact" class="home-section bg-gray" style="
-        background-image: url(img/asets/bg-2-bw.png); background-position: center; background-size: cover;">
+        background-image: url(img/asets/bg-2-bw.jpg); background-position: center; background-size: cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
